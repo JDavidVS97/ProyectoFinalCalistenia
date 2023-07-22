@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nivel básico</title>
+</head>
+<body>
+    <div id="contenedorEjercicios">
+        <div class="tab">
+            <h1 class="tituloMusculos">¿Qué músculos quieres trabajar?</h1>
+            <button class="tabmusculos" onclick="mostrarRutinas(event,'contenedorCC')">CUERPO COMPLETO</button>
+            <button class="tabmusculos" onclick="mostrarRutinas(event,'contenedorPT')">PECHO Y TRICEPS</button>
+            <button class="tabmusculos" onclick="mostrarRutinas(event,'contenedorEB')">ESPALDA Y BICEPS</button>
+            <button class="tabmusculos" onclick="mostrarRutinas(event,'contenedorABS')">ABDOMEN</button>
+            <button class="tabmusculos" onclick="mostrarRutinas(event,'contenedorH')">PIERNAS</button>
+            <button class="tabmusculos" onclick="mostrarRutinas(event,'contenedorP')">HOMBROS</button>
+        </div>
+        <div id="contenedorCC" class="tabcontenido">
+            <div class="ejercicio" id="flexiones">
+            <img alt="Flexiones" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX004.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">4x5</p>
+                <p class="parrafo-nombre">Flexiones</p>
+            </div>
+            <div class="ejercicio" id="sentadillas">
+                <img alt="Sentadillas" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX083.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">4x20</p>
+                <p class="parrafo-nombre">Sentadillas</p>
+            </div> 
+            <div class="ejercicio" id="fondosEnElBanco">
+                <img alt="Fondos en el banco" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX029.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">4x15</p>
+                <p class="parrafo-nombre">Fondos en el banco</p>
+            </div> 
+            <div class="ejercicio" id="zancadas">
+                <img alt="Zancadas" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX086.jpg&w=1920&q=75">
+                <p class="parrafo-repeticiones">4x12</p>
+                <p class="parrafo-nombre">Zancadas</p>
+            </div>
+            <div class="ejercicio" id="isometricoFlexiones">
+                <img alt="Isométrico flexiones" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX003.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">4x20"</p>
+                <p class="parrafo-nombre">Isométrico flexiones</p>
+            </div>  
+        </div>
+        <div id="contenedorPT" class="tabcontenido">
+            <div class="ejercicio" id="pinoAsistidoContraLaPared">
+                <img alt="Pino asistido contra la pared" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX139.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">3x15"</p>
+                <p class="parrafo-nombre">Pino asistido contra la pared</p>
+            </div>
+            <div class="ejercicio" id="flexionesDeclinadas">
+                <img alt="Flexiones declinadas" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX011.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">3x8</p>
+                <p class="parrafo-nombre">Flexiones declinadas</p>
+            </div> 
+            <div class="ejercicio" id="fondosEnElBanco2">
+                <img alt="Fondos en el banco" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX029.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">3x12</p>
+                <p class="parrafo-nombre">Fondos en el banco</p>
+            </div> 
+            <div class="ejercicio" id="pullDeTrapecio">
+                <img alt="Pull de trapecio" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX229.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">3x10</p>
+                <p class="parrafo-nombre">Pull de trapecio</p>
+            </div>
+            <div class="ejercicio" id="flexionesInclinadas">
+                <img alt="Flexiones inclinadas" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX001.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">3x8</p>
+                <p class="parrafo-nombre">Flexiones inclinadas</p>
+            </div>
+            <div class="ejercicio" id="flexionesPike">
+                <img alt="Flexiones Pike" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX012.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">3x5</p>
+                <p class="parrafo-nombre">Flexiones Pike</p>
+            </div>
+        </div>
+        <div id="contenedorEB" class="tabcontenido">
+            <div class="ejercicio" id="australianPullUpsEnCasa">
+            <img alt="Australian pull ups en casa con sillas" style="width: 120px;" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Ffull%2FEX513.jpg&w=1920&q=75&dpl=dpl_7EDq8XjKjVDYN1GQ8MKQA8zoab2D">
+                <p class="parrafo-repeticiones">3x5</p>
+                <p class="parrafo-nombre">Australian pull ups en casa con sillas</p>
+            </div>
+            <div class="ejercicio" id="elevacionesCruzadasEnPosicionDeFlexiones">
+                <img alt="Elevaciones cruzadas en posición de flexiones" style="width: 120px;" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Ffull%2FEX448.jpg&w=1080&q=75&dpl=dpl_7EDq8XjKjVDYN1GQ8MKQA8zoab2D">
+                <p class="parrafo-repeticiones">3x8</p>
+                <p class="parrafo-nombre">Elevaciones cruzadas en posición de flexiones</p>
+            </div> 
+            <div class="ejercicio">
+                <img alt="Australian pull ups en casa con mesa" style="width: 120px;" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Ffull%2FEX514.jpg&w=1920&q=75&dpl=dpl_7EDq8XjKjVDYN1GQ8MKQA8zoab2D">
+                <p class="parrafo-repeticiones">3x13</p>
+                <p class="parrafo-nombre">Australian pull ups en casa con mesa</p>
+            </div> 
+            <div class="ejercicio">
+                <img alt="Flexiones de agarre amplio" style="width: 120px;" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Ffull%2FEX008.jpg&w=1920&q=75&dpl=dpl_7EDq8XjKjVDYN1GQ8MKQA8zoab2D">
+                <p class="parrafo-repeticiones">3x15</p>
+                <p class="parrafo-nombre">Flexiones de agarre amplio</p>
+            </div>
+            <div class="ejercicio">
+                <img alt="Crunches parciales con brazos extendidos" style="width: 120px;" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Ffull%2FEX477.jpg&w=1920&q=75&dpl=dpl_7EDq8XjKjVDYN1GQ8MKQA8zoab2D">
+                <p class="parrafo-repeticiones">3x18</p>
+                <p class="parrafo-nombre">Crunches parciales con brazos extendidos</p>
+            </div>  
+        </div>
+        <div id="contenedorABS" class="tabcontenido">
+            <div class="ejercicio">
+            <img alt="Elevaciones de cadera con piernas extendidas" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX476.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">4x10</p>
+                <p class="parrafo-nombre">Elevaciones de cadera con piernas extendidas</p>
+            </div>
+            <div class="ejercicio">
+                <img alt="Crunches parciales con brazos extendidos" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX477.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">4x10</p>
+                <p class="parrafo-nombre">Crunches parciales con brazos extendidos</p>
+            </div> 
+            <div class="ejercicio">
+                <img alt="Crunches parciales con piernas flexionadas" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX479.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">4x10</p>
+                <p class="parrafo-nombre">Crunches parciales con piernas flexionadas</p>
+            </div> 
+            <div class="ejercicio">
+                <img alt="Plancha abdominal con flexión de columna" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX480.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">4x20"</p>
+                <p class="parrafo-nombre">Plancha abdominal con flexión de columna</p>
+            </div>  
+        </div>
+        <div id="contenedorH" class="tabcontenido">
+            <div class="ejercicio" id="australianPullUpsEnCasa">
+                <img alt="Australian pull ups en casa con sillas" style="width: 120px;" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Ffull%2FEX513.jpg&w=1920&q=75&dpl=dpl_7EDq8XjKjVDYN1GQ8MKQA8zoab2D">
+                    <p class="parrafo-repeticiones">3x5</p>
+                    <p class="parrafo-nombre">Australian pull ups en casa con sillas</p>
+                </div>
+                <div class="ejercicio" id="elevacionesCruzadasEnPosicionDeFlexiones">
+                    <img alt="Elevaciones cruzadas en posición de flexiones" style="width: 120px;" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Ffull%2FEX448.jpg&w=1080&q=75&dpl=dpl_7EDq8XjKjVDYN1GQ8MKQA8zoab2D">
+                    <p class="parrafo-repeticiones">3x8</p>
+                    <p class="parrafo-nombre">Elevaciones cruzadas en posición de flexiones</p>
+                </div> 
+                <div class="ejercicio">
+                    <img alt="Australian pull ups en casa con mesa" style="width: 120px;" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Ffull%2FEX514.jpg&w=1920&q=75&dpl=dpl_7EDq8XjKjVDYN1GQ8MKQA8zoab2D">
+                    <p class="parrafo-repeticiones">3x13</p>
+                    <p class="parrafo-nombre">Australian pull ups en casa con mesa</p>
+                </div> 
+                <div class="ejercicio">
+                    <img alt="Flexiones de agarre amplio" style="width: 120px;" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Ffull%2FEX008.jpg&w=1920&q=75&dpl=dpl_7EDq8XjKjVDYN1GQ8MKQA8zoab2D">
+                    <p class="parrafo-repeticiones">3x15</p>
+                    <p class="parrafo-nombre">Flexiones de agarre amplio</p>
+                </div>
+                <div class="ejercicio">
+                    <img alt="Crunches parciales con brazos extendidos" style="width: 120px;" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Ffull%2FEX477.jpg&w=1920&q=75&dpl=dpl_7EDq8XjKjVDYN1GQ8MKQA8zoab2D">
+                    <p class="parrafo-repeticiones">3x18</p>
+                    <p class="parrafo-nombre">Crunches parciales con brazos extendidos</p>
+                </div>   
+        </div>
+        <div id="contenedorP" class="tabcontenido">
+            <div class="ejercicio" id="pinoAsistidoContraLaPared">
+                <img alt="Pino asistido contra la pared" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX139.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">3x15"</p>
+                <p class="parrafo-nombre">Pino asistido contra la pared</p>
+            </div>
+            <div class="ejercicio" id="flexionesDeclinadas">
+                <img alt="Flexiones declinadas" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX011.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">3x8</p>
+                <p class="parrafo-nombre">Flexiones declinadas</p>
+            </div> 
+            <div class="ejercicio" id="fondosEnElBanco2">
+                <img alt="Fondos en el banco" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX029.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">3x12</p>
+                <p class="parrafo-nombre">Fondos en el banco</p>
+            </div> 
+            <div class="ejercicio" id="pullDeTrapecio">
+                <img alt="Pull de trapecio" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX229.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">3x10</p>
+                <p class="parrafo-nombre">Pull de trapecio</p>
+            </div>
+            <div class="ejercicio" id="flexionesInclinadas">
+                <img alt="Flexiones inclinadas" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX001.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">3x8</p>
+                <p class="parrafo-nombre">Flexiones inclinadas</p>
+            </div>
+            <div class="ejercicio" id="flexionesPike">
+                <img alt="Flexiones Pike" src="https://calisteniapp.com/_next/image?url=%2Fassets%2Fjpg%2Fworkouts%2Fexercises%2Fthumbnails%2FEX012.jpg&w=640&q=75">
+                <p class="parrafo-repeticiones">3x5</p>
+                <p class="parrafo-nombre">Flexiones Pike</p>
+            </div>
+    </div>
+    
+</body>
+<script src="script2.js" defer></script>
+</html>
